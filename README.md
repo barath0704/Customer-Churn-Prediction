@@ -1,59 +1,85 @@
-# 🔄 Customer Churn Prediction Project
+# 📉 Customer Churn Prediction (Machine Learning)
 
-This project uses real-world customer data to analyze patterns in churn behavior and predict which users are likely to leave a service. It includes exploratory data analysis, survival analysis, and machine learning modeling.
-
----
-
-## 📁 Project Structure
-
-| File                          | Description                                 |
-|-------------------------------|---------------------------------------------|
-| `1_EDA.ipynb`                 | Exploratory analysis of customer behavior   |
-| `2_Survival_Analysis.ipynb`   | Time-to-event (churn) analysis              |
-| `3_Churn_Prediction_Model.ipynb` | Logistic regression & decision tree models for churn prediction |
-| `dataset.csv` *(optional)*    | The dataset used (if public)                |
+This project analyzes customer churn behavior using real-world telecom data and applies machine learning models to predict customer retention. It includes exploratory data analysis, survival analysis, and predictive modeling to help businesses proactively identify customers at risk of churning.
 
 ---
 
-## ❓ Problem Statement
+## 🧠 Problem Statement
 
-The goal is to **identify patterns in customer behavior that lead to churn** and build a predictive model to help businesses **retain users** more effectively.
-
----
-
-## 💻 Tools Used
-
-- Python (Pandas, NumPy, Seaborn, Matplotlib)
-- Scikit-learn
-- Jupyter Notebook
+Telecom companies often struggle with retaining customers due to lack of visibility into churn behavior. The aim of this project is to develop a predictive model that can identify which customers are most likely to leave, enabling the company to implement targeted retention strategies.
 
 ---
 
-## 📊 Key Insights
+## 🙋‍♂️ My Role
 
-- Customers with longer contract durations are less likely to churn.
-- Monthly charges and service usage patterns strongly influence churn risk.
-- Survival analysis shows churn risk is highest in the first 6 months.
-
----
-
-## 📈 Models Used
-
-- Logistic Regression
-- Decision Tree Classifier
-- Accuracy & AUC used for evaluation
+As the sole contributor to this project, I performed:
+- Data cleaning and exploration
+- Feature engineering and EDA visualizations
+- Survival analysis to understand churn timing
+- Machine learning model training for churn classification
+- Interpretation of business insights and risk factors
 
 ---
 
-## 🎯 Outcomes
+## 📊 Project Highlights
 
-- Developed a working churn prediction model
-- Identified key customer behavior influencing churn
-- Useful for telecom, SaaS, or subscription-based services
+- ✅ **EDA**: Explored key churn patterns across tenure, contract types, charges, etc.
+- 🔁 **Survival Analysis**: Modeled the duration before customer churn using Kaplan-Meier estimators
+- 🤖 **Modeling**: Built a logistic regression model to classify churners vs. loyal customers
+- 🧾 **Feature Analysis**: Identified important factors like Monthly Charges and Contract Type
+- 📌 **Actionable Insights**: Recommendations to reduce churn via targeted offers and plan adjustments
 
 ---
 
-## 📌 Future Improvements
+## 📁 Notebooks Included
 
-- Use XGBoost or Random Forest for better performance
-- Deploy as a Flask app or Streamlit dashboard
+| Notebook                       | Purpose                                             |
+|--------------------------------|-----------------------------------------------------|
+| `Exploratory Data Analysis.ipynb` | Visualize trends in churn vs. customer attributes    |
+| `Customers Survival Analysis.ipynb` | Use survival curves to estimate customer lifetimes  |
+| `Churn Prediction Model.ipynb`     | ML model to predict churn likelihood                |
+
+---
+
+## 📦 Dataset Source
+
+- 📁 Dataset: [Telco Customer Churn – Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+- 📌 Features: Customer Demographics, Services, Billing, Churn Flag
+- 📈 Target: `Churn` (Yes/No)
+
+---
+
+## 🧰 Tools & Technologies
+
+| Tool/Library     | Purpose                                |
+|------------------|----------------------------------------|
+| Python           | Core programming                       |
+| Pandas, NumPy    | Data manipulation                      |
+| Matplotlib, Seaborn | Data visualization                   |
+| Lifelines        | Survival analysis                      |
+| Scikit-learn     | Machine learning modeling              |
+| Jupyter Notebook | Development environment                |
+
+---
+
+## 📍 Key Insights
+
+- 📈 Customers with month-to-month contracts are **3x more likely** to churn.
+- 💳 Higher **monthly charges** significantly increase churn risk.
+- ⌛ Customers typically churn within **first 20 months** if not retained.
+- 🔄 Retention offers could focus on longer-term contracts and bundled services.
+
+---
+
+## 🧠 Future Enhancements
+
+- 🔁 Test other ML models like Random Forest and XGBoost
+- 🌐 Deploy as a Streamlit app for interactive churn prediction
+- 📊 Integrate with a CRM for real-time alerts
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates how data science can be applied to a practical business problem — churn. The models and insights generated can help companies save millions in lost customers.
+
